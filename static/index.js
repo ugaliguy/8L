@@ -13,15 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Extract JSON data from request
             const data = JSON.parse(request.responseText);
 
-            // Update the result div
+            // Update the result table
             if (data.success) {
-                // let i 
-                // for (i = 0; i< data.items.length; i++) {
-                //     const contents = `i= ${i}  Title: ${data.items[i].volumeInfo.title}\n Authors: ${data.items[i].volumeInfo.authors}\n`
-                //     document.querySelector('#result').innerHTML = contents;
-                //     // document.querySelector('#result').append(contents);
-
-                // }
                 let i;
                 let n = data.items.length;
                 var txt = ``;
