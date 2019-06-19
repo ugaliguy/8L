@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     txt += `<tr><td> ${data.items[i].volumeInfo.publisher} </td></tr>`;
                     txt += `<tr><td> <img src=${data.items[i].volumeInfo.imageLinks.thumbnail}> </td></tr>`;
                     txt += `<tr><td> <a href=${data.items[i].volumeInfo.canonicalVolumeLink}>More Info</a> </td></tr>`;
+                    txt += `<tr><td> <br> </td></tr>`;
                     document.querySelector('#result').innerHTML = txt;                    
                 }                
             }
