@@ -1,0 +1,7 @@
+# This file is used by pip to install required python packages
+# Python version 3.7.2
+# Usage: pip install -r requirements.txt
+
+flask==1.0.3
+requests==2.22.0
+pytest==4.6.2
