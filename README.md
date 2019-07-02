@@ -63,6 +63,15 @@ I deleted both of the files books.py and application.py
 
 > - I would have liked to run a test suite against your web app. Unit tests are a particularly effective tool for developing clean and maintainable code, as well as providing a means to safely refactor existing code. I think it's fair to say unit tests are integral to our development approach at 8th Light and it's a shame that I've not been able to see how you'd approach unit testing this project.
 
+I understand the importance of tests, however I have never written them. Over the weekend, I tried to teach myself how to write them and found myself searching for a needle in a haystack. I tried to follow some simple examples of using pytest and quickly got lost - all of the examples were for blog apps with testing focused on user-authentication and database creation. I could not figure out how to do something relatively simple because of the more complex examples.
+
+What I would have tested for were the following:
+- Do requests receive responses - i.e. is the response status code equal to 200
+- Does entering a 10- or 13-digit ISBN return the correct book
+
+I'm sure there are many things I should test for, but I don't know what they are at the moment.
 
 
 > - I'd find it helpful if you could tell me a bit about your reasons for using javascript to perform client-side rendering of the Google Books API response rather than leveraging Flask's server-side rendering capabilities? index.js makes heavy use of anonymous / arrow functions, effectively combining lots of responsibilities into one function. Code written in such a manner can be difficult to test, and as the codebase grows it becomes harder to maintain.
+
+I respect the point you make about the arrow function in index.js being difficult to test. I used javascript for client-side rendering because it was more familiar to me and I was under some time-pressure to complete the challenge before leaving for an overseas wedding. I tried to better understand how to use Flask's server-side rendering this weekend and was unable to.  
