@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 let n = data.items.length;
                 var txt = ``;
                 for (i = 0; i < n; i++) {
-                    txt += `<tr><td> ${data.items[i].volumeInfo.title} </td></tr>`;
-                    txt += `<tr><td> ${data.items[i].volumeInfo.authors} </td></tr>`;
-                    txt += `<tr><td> ${data.items[i].volumeInfo.publisher} </td></tr>`;
+                    txt += `<tr><td>Title: ${data.items[i].volumeInfo.title} </td></tr>`;
+                    txt += `<tr><td>Author(s): ${data.items[i].volumeInfo.authors} </td></tr>`;
+                    txt += `<tr><td>Publisher: ${data.items[i].volumeInfo.publisher} </td></tr>`;
                     txt += `<tr><td> <img src=${data.items[i].volumeInfo.imageLinks.thumbnail}> </td></tr>`;
                     txt += `<tr><td> <a href=${data.items[i].volumeInfo.canonicalVolumeLink}>More Info</a> </td></tr>`;
                     txt += `<tr><td> <br> </td></tr>`;
